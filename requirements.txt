@@ -1,0 +1,39 @@
+Functional requirements: 
+
+A user shall be able to create a new account to use the system. 
+
+A user shall be able to log in the system using their own credentials. 
+
+A user shall be able to recover the forgotten password or username. 
+
+A user shall be able to track time for a particular task. 
+
+A user shall be able to record the amount of time spent on a previous task. 
+
+A user shall be able to see the summary of activities associated with time spent on those in a certain period of time. 
+
+The system shall let users to visualize their time usage during a certain period of time. 
+
+The system shall remember the activities and provide sort of autocomplete feature for activities so that a user does not have to input those activities manually every time. 
+
+The system shall support sharing activities or time usage patterns among users. 
+
+ 
+
+Nonfunctional requirements: 
+
+The system shall be built on client-server architecture. 
+
+Client side of the system shall use C# programming language on Windows platform. 
+
+Server side of the system shall use Go or Python language on another platform. 
+
+Server side of the system shall include a persistent store component. 
+
+ 
+
+Nice-to-have requirements: 
+
+The system can suggest more appropriate time to do a task that currently consumes too much time. 
+
+The system can automatically know what you are doing such as driving or walking so the user does not have to do that. 
