@@ -1,2 +1,2 @@
 # acs560_course_project
-Personal Time tracker
+Personal Time Tracker
