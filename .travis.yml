@@ -1,5 +1,6 @@
 go_import_path: nguytk01/
 language: go
+install: true
 go:
   - "1.11"
 
