@@ -1,6 +1,6 @@
+go_import_path: acs560_course_project
 language: go
-
 go:
   - "1.11"
-go_import_path: acs560_course_project
+
 script: go test ./...
