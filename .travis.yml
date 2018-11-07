@@ -4,4 +4,4 @@ install: true
 go:
   - "1.11"
 
-script: pwd && tree ${TRAVIS_HOME} && tree ${TRAVIS_HOME}/gopath/src
+script: pwd && ls ${TRAVIS_HOME} && ls ${TRAVIS_HOME}/gopath/src && ls ${TRAVIS_HOME}/gopath/src/nguytk01
