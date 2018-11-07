@@ -3,4 +3,5 @@ language: go
 go:
   - "1.11"
   - master
+go_import_path: acs560_course_project
 script: go test ./...
