@@ -1,6 +1,6 @@
-go_import_path: nguytk01/testTravis
+go_import_path: nguytk01/
 language: go
 go:
   - "1.11"
 
-script: go test ./...
+script: ls && ls ${TRAVIS_HOME} && ls ${TRAVIS_HOME}/gopath/src
