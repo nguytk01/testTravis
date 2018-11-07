@@ -4,4 +4,4 @@ install: true
 go:
   - "1.11"
 
-script: ls && ls ${TRAVIS_HOME} && ls ${TRAVIS_HOME}/gopath/src
+script: pwd && tree ${TRAVIS_HOME} && tree ${TRAVIS_HOME}/gopath/src
