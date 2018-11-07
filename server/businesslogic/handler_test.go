@@ -22,8 +22,10 @@ func TestNewUnauthorizedSessionHandler ( t * Testing.T) {
   });
   
   res, err := http.Get(server.URL)
-  if err = nil {
+  if err != nil {
     body := getBody(res)
+  } else {
+    t.Fail("fail")
   }
   var sessionReceived sessionType
   err = json.Unmarshal( body,  sessionReceived)
