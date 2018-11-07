@@ -1,4 +1,4 @@
-go_import_path: acs560_course_project
+go_import_path: nguytk01/testTravis
 language: go
 go:
   - "1.11"
