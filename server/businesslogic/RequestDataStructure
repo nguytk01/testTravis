@@ -1,5 +1,0 @@
-type userLoginRequest struct {
-	UserName string
-  Email string
-  SessionKey string
-}
