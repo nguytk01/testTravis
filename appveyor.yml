@@ -1,4 +1,4 @@
-version: 1.0.18
+version: 1.0.19
 clone_folder: c:\gopath\src\acs560_course_project
 environment:
   GOPATH: c:\gopath
@@ -8,7 +8,7 @@ cache:
 - packages -> **\packages.config
 before_build:
 - cd %APPVEYOR_BUILD_FOLDER%\server && go build
-- cd %APPVEYOR_BUILD_FOLDER%
+- cd %APPVEYOR_BUILD_FOLDER%\Project1\Project1
 - copy %APPVEYOR_BUILD_FOLDER%\server\server.exe %APPVEYOR_BUILD_FOLDER%\Project1
 build:
   verbosity: minimal
