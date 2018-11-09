@@ -2,11 +2,12 @@ version: 1.0.11
 clone_folder: c:\gopath\src\testTravis
 environment:
   GOPATH: c:\gopath
-
 install:
 - nuget restore %APPVEYOR_BUILD_FOLDER%\Project1
 cache:
 - packages -> **\packages.config
+before_build:
+- sh: cd server && go build && ./server &
 build:
   verbosity: minimal
 test_script:
