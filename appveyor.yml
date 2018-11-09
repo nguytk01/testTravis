@@ -1,4 +1,4 @@
-version: 1.0.8
+version: 1.0.9
 install:
 - nuget restore %APPVEYOR_BUILD_FOLDER%\Project1
 cache:
@@ -6,4 +6,4 @@ cache:
 build:
   verbosity: minimal
 test_script:
-- cmd: nunit3-console --where "class==Project1.TestStudent" Project1\bin\%CONFIGURATION%\Project1.exe
+- cmd: nunit3-console --where "class==Project1.TestStudent" Project1\bin\Debug\Project1.exe
