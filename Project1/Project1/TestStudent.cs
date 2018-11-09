@@ -22,7 +22,7 @@ namespace Project1
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
-            Console.WriteLine(Path.Combine(
+            Console.WriteLine("Server binary path: " + Path.Combine(
             Directory.GetParent(Directory.GetCurrentDirectory()).FullName,
             "server.exe"));
 

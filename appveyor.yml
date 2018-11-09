@@ -1,4 +1,4 @@
-version: 1.0.17
+version: 1.0.18
 clone_folder: c:\gopath\src\acs560_course_project
 environment:
   GOPATH: c:\gopath
