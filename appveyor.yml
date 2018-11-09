@@ -13,4 +13,4 @@ before_build:
 build:
   verbosity: minimal
 test_script:
-- cmd: nunit3-console --where "class==Project1.TestStudent" Project1\Project1\bin\Debug\Project1.exe
+- cmd: nunit3-console --where "class==Project1.TestStudent" bin\Debug\Project1.exe
