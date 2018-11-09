@@ -1,16 +1,8 @@
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\obj\Debug\Project1.csprojResolveAssemblyReference.cache
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\Project1.exe.config
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\Project1.exe
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\Project1.pdb
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\nunit.framework.dll
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\nunit.framework.pdb
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\nunit.framework.xml
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\obj\Debug\Project1.exe
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\obj\Debug\Project1.pdb
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\NUnit3.TestAdapter.dll
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\NUnit3.TestAdapter.pdb
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\nunit.engine.dll
-c:\users\ngtro\documents\visual studio 2017\Projects\Project1\Project1\bin\Debug\nunit.engine.api.dll
-C:\Users\ngtro\go\src\testTravis\Project1\Project1\obj\Debug\Project1.csprojResolveAssemblyReference.cache
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\Project1.exe
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\Project1.pdb
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\nunit.framework.dll
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\nunit.framework.pdb
+C:\Users\ngtro\go\src\testTravis\Project1\Project1\bin\Debug\nunit.framework.xml
 C:\Users\ngtro\go\src\testTravis\Project1\Project1\obj\Debug\Project1.exe
 C:\Users\ngtro\go\src\testTravis\Project1\Project1\obj\Debug\Project1.pdb

@@ -1,5 +1,5 @@
-version: 1.0.14
-clone_folder: c:\gopath\src\testTravis
+version: 1.0.15
+clone_folder: c:\gopath\src\acs560_course_project
 environment:
   GOPATH: c:\gopath
 install:
@@ -7,7 +7,7 @@ install:
 cache:
 - packages -> **\packages.config
 before_build:
-- cd %APPVEYOR_BUILD_FOLDER%\server && go build"
+- cd %APPVEYOR_BUILD_FOLDER%\server && go build
 - cd %APPVEYOR_BUILD_FOLDER%
 - copy %APPVEYOR_BUILD_FOLDER%\server\server.exe %APPVEYOR_BUILD_FOLDER%\Project1
 build:
