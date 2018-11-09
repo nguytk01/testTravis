@@ -1,6 +1,6 @@
-version: 1.0.6
+version: 1.0.7
 install:
-- nuget restore
+- nuget restore %APPVEYOR_BUILD_FOLDER%\Project1
 build:
   verbosity: minimal
 test_script:
