@@ -1,0 +1,5 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
+test_script:
+- cmd: nunit3-console --where "class==Project1.TestStudent" Project1\bin\Release\Project1.exe
