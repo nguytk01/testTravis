@@ -1,6 +1,6 @@
-version: 1.0.5
+version: 1.0.6
 install:
-- nuget package restore
+- nuget restore
 build:
   verbosity: minimal
 test_script:
