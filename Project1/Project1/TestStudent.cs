@@ -31,7 +31,7 @@ namespace Project1
             Directory.GetParent(Directory.GetCurrentDirectory()).FullName,
             "server.exe"));
 
-            TestContext.Out.WriteLine("server ID : " + server.Id);
+            Console.WriteLine("server ID : " + server.Id);
         }
 
         [TestCase]
