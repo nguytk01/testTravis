@@ -1,4 +1,4 @@
-version: 1.0.13
+version: 1.0.14
 clone_folder: c:\gopath\src\testTravis
 environment:
   GOPATH: c:\gopath
@@ -7,7 +7,9 @@ install:
 cache:
 - packages -> **\packages.config
 before_build:
-- start /B "cd %APPVEYOR_BUILD_FOLDER%\server && go build && server"
+- cd %APPVEYOR_BUILD_FOLDER%\server && go build"
+- cd %APPVEYOR_BUILD_FOLDER%
+- copy %APPVEYOR_BUILD_FOLDER%\server\server.exe %APPVEYOR_BUILD_FOLDER%\Project1
 build:
   verbosity: minimal
 test_script:
