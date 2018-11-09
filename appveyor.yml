@@ -1,5 +1,5 @@
-version: 1.0.10
-clone_folder: c:\gopath\src\github.com\$username\$project
+version: 1.0.11
+clone_folder: c:\gopath\src\testTravis
 environment:
   GOPATH: c:\gopath
 
