@@ -6,4 +6,4 @@ go:
 services:
   - postgresql
 
-script: export PGPASSWORD="" && export PGUSER="postgres" && pip install --user future && python server_tests.py builddb && python server_tests.py testserver && python server_tests.py buildserver
+script: export PGPASSWORD="" && export PGUSER="postgres" && pip install --user future && python server_tests.py builddb && python server_tests.py buildserver && python server_tests.py testserver
