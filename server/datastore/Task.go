@@ -18,7 +18,7 @@ type TaskFromDb struct{
 	TaskDate time.Time
 }
 
-var insertTaskString = "INSERT INTO Task (uuid_generate_v4(), taskName, timeSpent, taskDate, email) values ($1, $2, $3, $4);"
+var insertTaskString = "INSERT INTO Task (taskId, taskName, timeSpent, taskDate, email) values (uuid_generate_v4(),$1, $2, $3, $4);"
 var selectTasksByEmailString = "Select taskname, timespent, taskDate from Task where email = $1"
 var selectCountTasksByEmail = "Select Count(*) as count from Task where email = $1"
 
