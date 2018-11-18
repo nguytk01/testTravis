@@ -10,7 +10,7 @@ cache:
 install:
 - set PGPASSWORD=Password12!
 - set PGUSER=postgres
-- PATH=C:\Program Files\PostgreSQL\9.6\bin\;%PATH%
+- PATH=C:\Program Files\PostgreSQL\10\bin\;%PATH%
 - pip install future
 - python server_tests.py builddb
 - python server_tests.py buildclient
