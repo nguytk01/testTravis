@@ -142,21 +142,5 @@ func TestMain(m *testing.M) {
 	
 	
 	defer globalOrm.orm.Close()
-	_, err := globalOrm.orm.Exec("SET search_path TO " + "sandboxtest");
-	
-	if err != nil {
-		log.Println("statement error : " + err.Error())
-		os.Exit(1)
-	}
-	_, err = globalOrm.orm.Exec(resetTableAccount)
-	if err != nil {
-		log.Println("statement error : " + err.Error())
-		os.Exit(1)
-	}
-	_, err = globalOrm.orm.Exec(resetTableTask)
-	if err != nil {
-		log.Println("statement error : " + err.Error())
-		os.Exit(1)
-	}	
 	os.Exit(m.Run())
 }
