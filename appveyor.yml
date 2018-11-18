@@ -1,16 +1,20 @@
 version: 1.0.{build}
 clone_folder: c:\gopath\src\acs560_course_project
+clone_depth: 1
 environment:
   GOPATH: c:\gopath
-install:
-- nuget restore %APPVEYOR_BUILD_FOLDER%\Project1
+services:
+  - postgresql101
 cache:
-- Project1\packages -> **\packages.config
-before_build:
-- cd %APPVEYOR_BUILD_FOLDER%\server && go build
-- cd %APPVEYOR_BUILD_FOLDER%\Project1\Project1
-- copy %APPVEYOR_BUILD_FOLDER%\server\server.exe %APPVEYOR_BUILD_FOLDER%\Project1
+- client\TimeTracker\packages -> **\packages.config
+install:
+- set PGPASSWORD=Password12!
+- set PGUSER=postgres
+- python server_tests.py builddb
+- python server_tests.py buildclient
+- python server_tests.py testserver
+- python server_tests.py buildserver
 build:
   verbosity: minimal
 test_script:
-- cmd: nunit3-console --where "class==Project1.TestStudent" bin\Debug\Project1.exe
+- cmd: nunit3-console --where "namespace==TimeTracker" bin\Debug\TimeTracker.exe

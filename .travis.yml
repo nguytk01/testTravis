@@ -3,5 +3,7 @@ language: go
 install: true
 go:
   - "1.11"
+services:
+  - postgresql
 
-script: (pwd && ls ${TRAVIS_HOME} && ls ${TRAVIS_HOME}/gopath/src && ls ${TRAVIS_HOME}/gopath/src/acs560_course_project) || go test ./...
+script: PGPASSWORD="" PGUSER="postgres" python server_tests.py builddb && python server_tests.py testserver && python server_tests.py buildserver

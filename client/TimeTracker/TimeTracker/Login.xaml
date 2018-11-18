@@ -1,0 +1,52 @@
+﻿<Page x:Class="TimeTracker.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TimeTracker"
+      mc:Ignorable="d" 
+      d:DesignHeight="528.053" d:DesignWidth="1094.69"
+      Title="Login">
+
+    <Grid VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border BorderThickness="2" BorderBrush="Transparent" Grid.Row="0" Grid.Column="0">
+                    <TextBlock  Background="Transparent">Email</TextBlock>
+                </Border>
+                <Border BorderThickness="2" BorderBrush="Transparent" Grid.Column="1" Grid.Row="0">
+                    <TextBox Name="Email" Width="200" >
+                        
+                    </TextBox>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="Transparent" Grid.Row="1" Grid.Column="0">
+                    <TextBlock  Background="Transparent">Password</TextBlock>
+                </Border>
+                <Border BorderThickness="2" BorderBrush="Transparent" Grid.Column="1" Grid.Row="1">
+                    <TextBox Name="Password" Width="200" >
+                    </TextBox>
+                </Border>
+            </Grid>
+            <Button Name="LoginBtn" Width="130" Click="LoginBtn_Click">
+                Login
+            </Button>
+
+            <Button Name="CreateAccountBtn" Width="130" Click="CreateAccountBtn_Click">
+                CreateAccount
+            </Button>
+
+            <Button Name="ForgotPasswordBtn" Width="130" Click="ForgotPasswordBtn_Click">
+                Forgot password ?
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

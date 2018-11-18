@@ -1,1 +1,6 @@
-Project1/packages/**
+client/TimeTracker/packages/**
+**/testResult.xml
+client/TimeTracker/TimeTracker/bin/**
+client/TimeTracker/TimeTracker/obj/**
+*.exe
+server/runserver.bat
