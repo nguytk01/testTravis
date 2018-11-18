@@ -57,7 +57,7 @@ def testserver():
 		sys.exit(1)
 	execute(["go", "test", os.path.join(".","...")])
 	os.chdir("..")
-	os.putenv("GOCACHE", "on)
+	os.putenv("GOCACHE", "on")
 	
 def buildclient():
 	if platform.system() == "Windows":
