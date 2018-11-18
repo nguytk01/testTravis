@@ -121,7 +121,6 @@ func TestMain(m *testing.M) {
 	log.SetFlags(log.Llongfile)
 	if database=="postgres" && 
     (databaseUserName == "" || 
-      databasePassword == ""  || 
       onlineDatabaseName == "" || 
       hostName == "" || 
       hostPort == "") {
