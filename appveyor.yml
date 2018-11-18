@@ -10,6 +10,7 @@ cache:
 install:
 - set PGPASSWORD=Password12!
 - set PGUSER=postgres
+- pip install future
 - python server_tests.py builddb
 - python server_tests.py buildclient
 - python server_tests.py testserver
