@@ -6,4 +6,4 @@ go:
 services:
   - postgresql
 
-script: PGPASSWORD="" PGUSER="postgres" python server_tests.py builddb && python server_tests.py testserver && python server_tests.py buildserver
+script: PGPASSWORD="" PGUSER="postgres" pip install future && python server_tests.py builddb && python server_tests.py testserver && python server_tests.py buildserver
